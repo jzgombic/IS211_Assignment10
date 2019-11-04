@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 
-import sqlite3
+import sqlite3 as sql
 import sys
 
 
-con = sqlite3.connect('pets.db')
+con = sql.connect('pets.db')
 c = con.cursor()
 
 def query_pets():
